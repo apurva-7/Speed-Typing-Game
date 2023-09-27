@@ -1,4 +1,4 @@
-const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+const RANDOM_QUOTE_API_URL = "https://api.quotable.io/random";
 const qouteDisplayElement = document.querySelector("#quoteDisplay");
 const quoteInputElement = document.querySelector("#quoteInput");
 const timerElement = document.querySelector("#timer");
@@ -42,7 +42,7 @@ async function renderNewQuote() {
 		qouteDisplayElement.appendChild(characterSpan);
 	});
 	quoteInputElement.value = "";
-    startTimer();
+	startTimer();
 }
 
 let startTime;
